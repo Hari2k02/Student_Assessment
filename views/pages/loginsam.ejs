@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page</title>
+	<link rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+		crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/login.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+		data-tag="font" />
+	<link rel="stylesheet" href="/css/style.css" />
+	<link href="/css/home.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div>
+
+
+		<div class="home-container">
+			<div data-role="Header" class="header-header header-root-class-name">
+				<nav class="header-nav">
+					<div class="header-container">
+						<a href="/" class="header-navlink Large">
+							Student Progress Tracker
+						</a>
+						<div class="header-menu">
+							<a href="/" class="header-navlink1 Large">Home</a>
+							<a href="/users/contact" class="header-navlink2 Large">Contact us</a>
+						</div>
+						<div class="header-container1">
+							<div class="header-container2">
+								<div class="primary-pink-button-container">
+									<button class="primary-pink-button-button button ButtonSmall">
+										<a href="/users/login">Login</a>
+									</button>
+								</div>
+							</div>
+							<div data-role="BurgerMenu" class="header-burger-menu">
+								<svg viewBox="0 0 1024 1024" class="header-icon">
+									<path
+										d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z">
+									</path>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div data-role="MobileMenu" class="header-mobile-menu">
+					<div class="header-top">
+						<a href="/" class="header-navlink4 Large">
+							Student Progress Tracker
+						</a>
+						<div data-role="CloseMobileMenu" class="header-close-menu">
+							<svg viewBox="0 0 1024 1024" class="header-icon2">
+								<path
+									d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
+								</path>
+							</svg>
+						</div>
+					</div>
+					<div class="header-mid">
+						<div class="header-menu1">
+							<a href="/" class="header-navlink5 Large">Home</a>
+							<a href="/users/contact" class="header-navlink6 Large">About us</a>
+							<!-- <a href="coming-soon.html" class="header-navlink7 Large">
+								Coming Soon
+							</a> -->
+						</div>
+					</div>
+					<div class="header-bot">
+						<div class="primary-pink-button-container">
+							<button class="primary-pink-button-button button ButtonSmall">
+								<a href="/users/login">Login</a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-5">
+				<div class="col-md-6 m-auto">
+				  <div class="card card-body">
+					<h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>  Login</h1>
+					<%- include('../partials/messages') %>
+					<form action="/users/login" method="POST">
+					  <div class="form-group">
+						<label for="email">Email</label>
+						<input
+						  type="email"
+						  id="email"
+						  name="email"
+						  class="form-control"
+						  placeholder="Enter Email"
+						/>
+					  </div>
+					  <div class="form-group">
+						<label for="password">Password</label>
+						<input
+						  type="password"
+						  id="password"
+						  name="password"
+						  class="form-control"
+						  placeholder="Enter Password"
+						/>
+					  </div>
+					  <button type="submit" class="btn btn-primary btn-block">Login</button>
+					</form>
+					<p class="lead mt-4">
+					  No Account? <a href="/users/register">Register</a>
+					</p>
+				  </div>
+				</div>
+			</div>
+			
+			<!-- partial:index.partial.html -->
+			<!--
+			<div class="box-form">
+				<div class="left">
+					<div class="overlay">
+						<h1 class="home-text03 HeadingOne">Student Tracker </h1>
+					</div>
+				</div>
+
+
+				<div class="right">
+					<h5 class="home-text03 HeadingOne">Login</h5>
+					<p class="feature-card-text HeadingThree">Don't have an account? <br /><a class="register-now" href="../register-page/register.html">Register now</a></p>
+					<div class="inputs ">
+						<input type="text" placeholder="Username">
+						<br>
+						<input type="password" placeholder="Password">
+					</div>
+					<br>
+					<button class="login-btn">LOGIN</button>
+				</div>
+
+			</div>
+			-->
+			<!-- partial -->
+			
+</body>
+
+</html>
